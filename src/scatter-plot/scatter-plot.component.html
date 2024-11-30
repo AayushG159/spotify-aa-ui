@@ -1,0 +1,34 @@
+<div>
+    <div class="radio-groups">
+        <div id="firstFeature">
+            <mat-radio-group (change)="onFirstSelect()" [(ngModel)]="firstFeature"> Select 1st feature:
+                <mat-radio-button value="acousticness">Acousticness</mat-radio-button>
+                <mat-radio-button value="danceability">Danceability</mat-radio-button>
+                <mat-radio-button value="energy">Energy</mat-radio-button>
+                <!-- <mat-radio-button value="instrumentalness">Instrumentalness</mat-radio-button> -->
+                <mat-radio-button value="liveness">Liveness</mat-radio-button>
+                <mat-radio-button value="loudness">Loudness</mat-radio-button>
+                <mat-radio-button value="speechiness">Speechiness</mat-radio-button>
+                <mat-radio-button value="tempo">Tempo</mat-radio-button>
+                <mat-radio-button value="valence">Valence</mat-radio-button>
+            </mat-radio-group>
+        </div>
+        <div>
+            <mat-radio-group (change)="onSecondSelect()" [(ngModel)]="secondFeature"> Select 2nd feature:
+                <mat-radio-button value="acousticness">Acousticness</mat-radio-button>
+                <mat-radio-button value="danceability">Danceability</mat-radio-button>
+                <mat-radio-button value="energy">Energy</mat-radio-button>
+                <!-- <mat-radio-button value="instrumentalness">Instrumentalness</mat-radio-button> -->
+                <mat-radio-button value="liveness">Liveness</mat-radio-button>
+                <mat-radio-button value="loudness">Loudness</mat-radio-button>
+                <mat-radio-button value="speechiness">Speechiness</mat-radio-button>
+                <mat-radio-button value="tempo">Tempo</mat-radio-button>
+                <mat-radio-button value="valence">Valence</mat-radio-button>
+            </mat-radio-group>
+        </div>
+    </div>
+    <div #scatterPlotContainer class="container"></div>
+</div>
+<div>
+    <ag-grid-angular class="ag-theme-quartz brushGrid"  [rowData]="brushSelected" [columnDefs]="colDefs" />
+</div>
