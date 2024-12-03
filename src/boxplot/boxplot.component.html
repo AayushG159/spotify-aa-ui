@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="controls">
+    <div class="feature-select">
+      <label>Feature to Analyze:</label>
+      <mat-radio-group
+        [(ngModel)]="selectedFeature"
+        (ngModelChange)="onFeatureSelect()"
+      >
+        <mat-radio-button
+          *ngFor="let feature of features"
+          [value]="feature.value"
+        >
+          {{ feature.label }}
+        </mat-radio-button>
+      </mat-radio-group>
+    </div>
+  </div>
+  <div #boxplotContainer class="plot-container"></div>
+</div>

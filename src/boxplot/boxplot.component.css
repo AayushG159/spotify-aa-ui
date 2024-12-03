@@ -1,0 +1,81 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.controls {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.feature-select {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mat-radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.plot-container {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: white;
+  min-height: 600px;
+}
+
+.mat-radio-button {
+  margin: 5px 0;
+}
+
+label {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.outlier:hover {
+  cursor: pointer;
+}
+
+/* Add tooltip styles */
+div.tooltip {
+  position: absolute;
+  text-align: left;
+  padding: 8px;
+  font: 12px sans-serif;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  pointer-events: none;
+  max-width: 200px;
+  z-index: 1000;
+}
+
+.tooltip {
+  position: absolute;
+  text-align: right;
+  padding: 50px;
+  font: 12px sans-serif;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  pointer-events: none;
+  max-width: 200px;
+  z-index: 1000;
+}
+
+.mat-radio-group {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+
+.mat-radio-button {
+  margin: 5px;
+}

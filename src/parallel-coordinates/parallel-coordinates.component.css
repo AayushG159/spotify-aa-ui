@@ -1,0 +1,7 @@
+path {
+  transition: stroke 0.2s, stroke-width 0.2s;
+}
+
+svg {
+  font-family: Arial, sans-serif;
+}
